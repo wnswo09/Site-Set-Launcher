@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Set Launcher Quick Launch</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="shell shell--quick">
+      <header class="header">
+        <h1>Quick Launch</h1>
+        <p>Select a set to open it in a new window instantly.</p>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <button id="open-options-btn">Open Settings</button>
+          <button id="reload-btn">Reload</button>
+        </div>
+        <p class="muted">Use number keys 1-9 to launch quickly.</p>
+        <div id="preset-grid" class="preset-grid"></div>
+        <p id="status" class="status" role="status"></p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/quick-launch/main.ts"></script>
+  </body>
+</html>

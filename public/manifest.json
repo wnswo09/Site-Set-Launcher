@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Site Set Launcher",
+  "description": "Save website sets and open them all at once in a new window.",
+  "version": "0.1.0",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Site Set Launcher",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "commands": {
+    "open_quick_launcher": {
+      "suggested_key": {
+        "default": "Alt+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Open quick launcher"
+    }
+  }
+}

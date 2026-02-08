@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Set Launcher Options</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="shell shell--options">
+      <header class="header">
+        <h1>Site Set Launcher Settings</h1>
+        <p>Create sets and manage URL order.</p>
+      </header>
+
+      <div class="options-layout">
+        <section class="panel">
+          <h2>Set List</h2>
+          <div class="row">
+            <input id="new-preset-name" type="text" placeholder="New set name" />
+            <button id="add-preset-btn" class="primary">Add</button>
+          </div>
+          <ul id="preset-list" class="preset-list"></ul>
+        </section>
+
+        <section class="panel">
+          <h2>Edit Set</h2>
+
+          <label for="default-preset-select">Default set</label>
+          <select id="default-preset-select"></select>
+
+          <label for="preset-name-input">Set name</label>
+          <input id="preset-name-input" type="text" />
+
+          <label for="urls-textarea">URL list</label>
+          <p class="muted">Enter one URL per line. Line order becomes tab order.</p>
+          <textarea id="urls-textarea" rows="12" spellcheck="false"></textarea>
+
+          <div class="row">
+            <button id="save-preset-btn" class="primary">Save</button>
+            <button id="delete-preset-btn" class="danger">Delete</button>
+          </div>
+
+          <p id="status" class="status" role="status"></p>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="/src/options/main.ts"></script>
+  </body>
+</html>

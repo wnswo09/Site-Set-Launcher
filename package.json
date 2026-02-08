@@ -1,0 +1,16 @@
+{
+  "name": "site-set-launcher-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch --mode development",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.291",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}

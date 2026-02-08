@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Set Launcher</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="shell shell--popup">
+      <header class="header">
+        <h1>Site Set Launcher</h1>
+        <p>Save website sets and launch them with one click or shortcut.</p>
+      </header>
+
+      <section class="panel">
+        <label for="preset-select">Select a set</label>
+        <select id="preset-select"></select>
+
+        <div class="row">
+          <button id="run-btn" class="primary">Run</button>
+          <button id="open-options-btn">Settings</button>
+        </div>
+
+        <p id="hint" class="muted"></p>
+        <p id="status" class="status" role="status"></p>
+      </section>
+    </main>
+
+    <script type="module" src="/src/popup/main.ts"></script>
+  </body>
+</html>
